@@ -1,0 +1,595 @@
+<% include ./partials/header %>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.2/css/font-awesome.min.css">
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+
+<link href='https://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Monoton' rel='stylesheet' type='text/css'>
+
+
+
+
+
+
+
+  <link href="css/dasdezine.css" rel="stylesheet">
+
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+</head>
+
+<body id="page-top" class="index">
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-color navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-left">
+                    <li class="page-scroll">
+                        <a href="/" style="color:yellow;">Procure-Me</a>
+                    </li>
+
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+<div class="container">
+  <div id="login-box">
+    <div class="logo">
+      <img src="http://res.cloudinary.com/jssate/image/upload/v1517546274/people_orig_htxxvo.png" class="img img-responsive img-circle center-block"/>
+      <h1 class="logo-caption"><span class="tweak">User already exists</h1>
+    </div><!-- /.logo -->
+    <div class="controls">
+      <form action="/factory" method="post">
+        <input type="text" name="username" placeholder="Factory Name" class="form-control" />
+        <input type="text" name="ownername" placeholder="Owner name" class="form-control" />
+        <input type="text" name="email" placeholder="Email-id" class="form-control" />
+        <input type="text" name="phone" placeholder="Phone number" class="form-control" />
+        <input type="text" name="product" placeholder="Products Manufactured" class="form-control" />
+        <input type="text" name="unit" placeholder="Max units manufacturing limit" class="form-control" />
+        <input type="password" name="password" placeholder="password" class="form-control" />
+      <button class="btn btn-default btn-block btn-custom">Login</button>
+      </form>
+    </div><!-- /.controls -->
+  </div><!-- /#login-box -->
+</div><!-- /.container -->
+<div id="particles-js"></div>
+<!--<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>-->
+
+
+
+<style>
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+@import url('https://fonts.googleapis.com/css?family=Poiret+One');
+
+body, html {
+  height: 100%;
+  background-repeat: no-repeat;    /*background-image: linear-gradient(rgb(12, 97, 33),rgb(104, 145, 162));*/
+  background:black;
+  position: relative;
+}
+#login-box {
+  position: absolute;
+  top: 140px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 350px;
+  margin: 0 auto;
+  border: 1px solid black;
+  background: rgba(48, 46, 45, 1);
+  min-height: 250px;
+  padding: 20px;
+  z-index: 9999;
+}
+#login-box .logo .logo-caption {
+  font-family: 'Poiret One', cursive;
+  color: white;
+  text-align: center;
+  margin-bottom: 0px;
+}
+#login-box .logo .tweak {
+  color: #ff5252;
+}
+#login-box .controls {
+  padding-top: 30px;
+}
+#login-box .controls input {
+  border-radius: 0px;
+  background: rgb(98, 96, 96);
+  border: 0px;
+  color: white;
+  font-family: 'Nunito', sans-serif;
+}
+#login-box .controls input:focus {
+  box-shadow: none;
+}
+#login-box .controls input:first-child {
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+}
+#login-box .controls input:last-child {
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+}
+#login-box button.btn-custom {
+  border-radius: 2px;
+  margin-top: 8px;
+  background:#ff5252;
+  border-color: rgba(48, 46, 45, 1);
+  color: white;
+  font-family: 'Nunito', sans-serif;
+}
+#login-box button.btn-custom:hover{
+  -webkit-transition: all 500ms ease;
+  -moz-transition: all 500ms ease;
+  -ms-transition: all 500ms ease;
+  -o-transition: all 500ms ease;
+  transition: all 500ms ease;
+  background: rgba(48, 46, 45, 1);
+  border-color: #ff5252;
+}
+#particles-js{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: 50% 50%;
+    position: fixed;
+    top: 0px;
+    z-index:1;
+}
+</style>
+
+
+
+
+<script>
+
+$.getScript("https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js", function(){
+    particlesJS('particles-js',
+      {
+        "particles": {
+          "number": {
+            "value": 80,
+            "density": {
+              "enable": true,
+              "value_area": 800
+            }
+          },
+          "color": {
+            "value": "#ffffff"
+          },
+          "shape": {
+            "type": "circle",
+            "stroke": {
+              "width": 0,
+              "color": "#000000"
+            },
+            "polygon": {
+              "nb_sides": 5
+            },
+            "image": {
+              "width": 100,
+              "height": 100
+            }
+          },
+          "opacity": {
+            "value": 0.5,
+            "random": false,
+            "anim": {
+              "enable": false,
+              "speed": 1,
+              "opacity_min": 0.1,
+              "sync": false
+            }
+          },
+          "size": {
+            "value": 5,
+            "random": true,
+            "anim": {
+              "enable": false,
+              "speed": 40,
+              "size_min": 0.1,
+              "sync": false
+            }
+          },
+          "line_linked": {
+            "enable": true,
+            "distance": 150,
+            "color": "#ffffff",
+            "opacity": 0.4,
+            "width": 1
+          },
+          "move": {
+            "enable": true,
+            "speed": 6,
+            "direction": "none",
+            "random": false,
+            "straight": false,
+            "out_mode": "out",
+            "attract": {
+              "enable": false,
+              "rotateX": 600,
+              "rotateY": 1200
+            }
+          }
+        },
+        "interactivity": {
+          "detect_on": "canvas",
+          "events": {
+            "onhover": {
+              "enable": true,
+              "mode": "repulse"
+            },
+            "onclick": {
+              "enable": true,
+              "mode": "push"
+            },
+            "resize": true
+          },
+          "modes": {
+            "grab": {
+              "distance": 400,
+              "line_linked": {
+                "opacity": 1
+              }
+            },
+            "bubble": {
+              "distance": 400,
+              "size": 40,
+              "duration": 2,
+              "opacity": 8,
+              "speed": 3
+            },
+            "repulse": {
+              "distance": 200
+            },
+            "push": {
+              "particles_nb": 4
+            },
+            "remove": {
+              "particles_nb": 2
+            }
+          }
+        },
+        "retina_detect": true,
+        "config_demo": {
+          "hide_card": false,
+          "background_color": "#b61924",
+          "background_image": "",
+          "background_position": "50% 50%",
+          "background_repeat": "no-repeat",
+          "background_size": "cover"
+        }
+      }
+    );
+
+});
+
+
+
+
+
+
+
+</script>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/cbpAnimatedHeader.js"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/freelancer.js"></script>
+
+</body>
+
+
+
+
+<style>
+
+
+canvas {
+  height: 100vh;
+  z-index: -10;
+  position: fixed;
+  top: 0px;
+}
+
+a {
+  color: #bbbbc4;
+  text-decoration: none;
+  -o-transition: .5s;
+  -ms-transition: .5s;
+  -moz-transition: .5s;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+a:hover {
+  color: #fc3565;
+}
+
+h1 {
+  color: #FDD200;
+  padding-bottom: 0px;
+  margin-bottom: 1%;
+}
+
+
+<style>
+@import url(https://fonts.googleapis.com/css?family=Ubuntu:400,700|Lato:400,700);
+
+/****created and maintained  @dasdezine****/
+
+body {
+    overflow-x: hidden;
+    color: #212121;
+}
+
+p {
+    font-size: 20px;
+}
+
+p.small {
+    font-size: 16px;
+}
+
+a,
+a:hover,
+a:focus,
+a:active,
+a.active {
+    outline: 0;
+    color: #fad663;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-transform: uppercase;
+    font-family: 'Ubuntu',"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+}
+
+hr.star-light,
+hr.star-primary {
+    margin: 20px auto 30px;
+    padding: 0;
+    max-width: 250px;
+    border: 0;
+    border-top: solid 5px;
+    text-align: center;
+}
+
+hr.star-light:after,
+hr.star-primary:after {
+    content: "\f197";
+    display: inline-block;
+    position: relative;
+    top: -.8em;
+    padding: 0 .25em;
+    font-family: FontAwesome;
+    font-size: 2em;
+}
+
+hr.star-light {
+    border-color: #212121;
+}
+
+hr.star-light:after {
+    color: #212121;
+    background-color: #FDD200;
+}
+
+hr.star-primary {
+    border-color: #212121;
+}
+
+hr.star-primary:after {
+    color: #212121;
+    background-color: #fff;
+}
+
+.img-centered {
+    margin: 0 auto;
+}
+
+header {
+    text-align: center;
+    color: #212121;
+    background:     #2c3e50;
+}
+
+header .container {
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+header img {
+    display: block;
+    margin: 0 auto 20px;
+}
+
+header .intro-text .name {
+    padding-top: 20px;
+    display: block;
+    text-transform: uppercase;
+    font-family: 'Ubuntu',"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 2em;
+    font-weight: 700;
+}
+
+header .intro-text .skills {
+    font-size: 1.25em;
+    font-weight: 300;
+}
+
+@media(min-width:768px) {
+    header .container {
+        padding-top: 200px;
+        padding-bottom: 100px;
+    }
+
+    header .intro-text .name {
+        font-size: 4.75em;
+    }
+
+    header .intro-text .skills {
+        font-size: 1.75em;
+    }
+}
+
+@media(min-width:1024px) {
+    header {
+
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        background-position: center 50px;
+    }
+    header .container {
+        padding-top: 100px;
+        padding-bottom: 200px;
+    }
+
+    header img.img-bigScreen {
+        display: none;
+    }
+
+    hr.star-light:after {
+    background-color: #F7CC01;
+}
+}
+
+@media(min-width:1366px) {
+    header {
+        background-position: center 10px;
+    }
+}
+
+
+@media(min-width:768px) {
+    .navbar-fixed-top {
+        padding: 25px 0;
+        -webkit-transition: padding .3s;
+        -moz-transition: padding .3s;
+        transition: padding .3s;
+    }
+
+    .navbar-fixed-top .navbar-brand {
+        font-size: 2em;
+        -webkit-transition: all .3s;
+        -moz-transition: all .3s;
+        transition: all .3s;
+    }
+
+    .navbar-fixed-top.navbar-shrink {
+        padding: 10px 0;
+    }
+
+    .navbar-fixed-top.navbar-shrink .navbar-brand {
+        font-size: 1.5em;
+    }
+}
+
+.navbar {
+    text-transform: uppercase;
+    font-family: 'Ubuntu',"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+}
+
+.navbar-color {
+    background-color: #212121;
+}
+
+.navbar a:focus {
+    outline: 0;
+}
+
+.navbar .navbar-nav {
+    letter-spacing: 1px;
+}
+
+.navbar-default .navbar-toggle {
+    border-color:#fdd200;
+}
+
+.navbar-default .navbar-toggle:hover {
+    background-color:#fdd200;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color:#fff;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color:#fff;
+}
+.navbar-default .navbar-nav>li>a:hover {
+    color: #fdd200;
+}
+
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:hover,
+.navbar-default .navbar-nav>.active>a:focus
+{
+    color: #212121;
+    background-color: #fdd200;
+}
+
+.navbar .navbar-nav li a:focus {
+    outline: 0;
+}
+
+.navbar-default,
+.navbar-inverse {
+    border: 0;
+}
+
+
+
+</style>
+
+
+<% include ./partials/footer %>
